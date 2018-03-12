@@ -7,3 +7,12 @@ c:\users\zzzhbooo\source\repos\VelibSoapIWS\VelibSoapIWS\obj\Debug\VelibSoapIWS.
 c:\users\zzzhbooo\source\repos\VelibSoapIWS\VelibSoapIWS\obj\Debug\VelibSoapIWS.dll
 c:\users\zzzhbooo\source\repos\VelibSoapIWS\VelibSoapIWS\obj\Debug\VelibSoapIWS.pdb
 c:\users\zzzhbooo\source\repos\VelibSoapIWS\VelibSoapIWS\obj\Debug\VelibSoapIWS.csprojResolveAssemblyReference.cache
+C:\Users\zzzhbooo\Desktop\velibsoap-master\VelibSoapIWS\VelibSoapIWS\bin\Debug\VelibSoapIWS.dll.config
+C:\Users\zzzhbooo\Desktop\velibsoap-master\VelibSoapIWS\VelibSoapIWS\bin\Debug\VelibSoapIWS.dll
+C:\Users\zzzhbooo\Desktop\velibsoap-master\VelibSoapIWS\VelibSoapIWS\bin\Debug\VelibSoapIWS.pdb
+C:\Users\zzzhbooo\Desktop\velibsoap-master\VelibSoapIWS\VelibSoapIWS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\zzzhbooo\Desktop\velibsoap-master\VelibSoapIWS\VelibSoapIWS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\zzzhbooo\Desktop\velibsoap-master\VelibSoapIWS\VelibSoapIWS\obj\Debug\VelibSoapIWS.csproj.CoreCompileInputs.cache
+C:\Users\zzzhbooo\Desktop\velibsoap-master\VelibSoapIWS\VelibSoapIWS\obj\Debug\VelibSoapIWS.dll
+C:\Users\zzzhbooo\Desktop\velibsoap-master\VelibSoapIWS\VelibSoapIWS\obj\Debug\VelibSoapIWS.pdb
+C:\Users\zzzhbooo\Desktop\velibsoap-master\VelibSoapIWS\VelibSoapIWS\obj\Debug\VelibSoapIWS.csprojResolveAssemblyReference.cache

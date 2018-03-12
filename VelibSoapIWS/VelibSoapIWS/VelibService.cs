@@ -21,16 +21,17 @@ namespace VelibSoapIWS
                 "Attention: Both the name of the city and the station should be valid, there is no limitation of upper or lower case for the names.\n";
         }
 
-        public string GetStationInfo(string city, string station)
+        public async Task<string> GetStationInfo(string city, string station)
         {
             string requestUri = "https://api.jcdecaux.com/vls/v1/stations/?contract=" + city + "&apiKey=" + key;
             WebRequest request = WebRequest.Create(requestUri);
             request.ContentType = "text/html;charset=UTF-8";
             request.Method = "GET";
+            request.Proxy = null;
             WebResponse response;
             try
             {
-                response = request.GetResponse();
+                response = await request.GetResponseAsync(); 
             }
             catch (Exception e)
             {
@@ -59,16 +60,17 @@ namespace VelibSoapIWS
             return "Not a valid station, please try again.";
         }
 
-        public string GetStationsOfACity(string city)
+        public async Task<string> GetStationsOfACity(string city)
         {
             string requestUri = "https://api.jcdecaux.com/vls/v1/stations/?contract=" + city + "&apiKey=" + key;
             WebRequest request = WebRequest.Create(requestUri);
             request.ContentType = "text/html;charset=UTF-8";
             request.Method = "GET";
+            request.Proxy = null;
             WebResponse response;
             try
             {
-                response = request.GetResponse();
+                response = await request.GetResponseAsync();
             }
             catch (Exception e)
             {

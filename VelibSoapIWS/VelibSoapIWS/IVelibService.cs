@@ -11,10 +11,10 @@ namespace VelibSoapIWS
     interface IVelibService
     {
         [OperationContract]
-        string GetStationsOfACity(string city);
+        Task<string> GetStationsOfACity(string city);
 
         [OperationContract]
-        string GetStationInfo(string city, string station);
+        Task<string> GetStationInfo(string city, string station);
 
         [OperationContract]
         string GetHelp();
