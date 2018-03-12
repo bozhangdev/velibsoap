@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -20,7 +21,7 @@ namespace GuiClientWS
         Button returnButton;
         TextBox cityTextBox;
         TextBox stationTextBox;
-        VelibServiceClient client = new VelibServiceClient("service1");
+        VelibServiceClient client;
         string result;
         public Velib()
         {
@@ -33,6 +34,8 @@ namespace GuiClientWS
             returnButton.Size = new Size(50, 30);
             returnButton.Location = new Point(0, 0);
             returnButton.Click += new EventHandler(ReturnButtonClick);
+            InitClient();
+            result = "test";
             Controls.Add(InitReturnPanel());
         }
 
@@ -43,6 +46,22 @@ namespace GuiClientWS
             returnPanel.Location = new Point(0, 0);
             returnPanel.Controls.Add(returnButton);
             return returnPanel;
+        }
+
+        private void InitClient()
+        {
+            client = new VelibServiceClient("service1");
+            client.GetStationsOfACityCompleted += delegate (object sender, GetStationsOfACityCompletedEventArgs args)
+            {
+                result = args.Result;
+                result += "\n\n\n\n\n\n\n\n\n\n\n\n";
+                CreateResultPanel();
+            };
+            client.GetStationInfoCompleted += delegate (object sender, GetStationInfoCompletedEventArgs args)
+            {
+                result = args.Result;
+                CreateResultPanel();
+            };
         }
 
         private void CreateWelcomePanel()
@@ -176,9 +195,7 @@ namespace GuiClientWS
         {
             if (cityTextBox.Text != "")
             {
-                result = client.GetStationsOfACity(cityTextBox.Text);
-                result += "\n\n\n\n\n\n\n\n\n\n\n\n";
-                CreateResultPanel();
+                client.GetStationsOfACityAsync(cityTextBox.Text);
             }
             else
             {
@@ -190,12 +207,11 @@ namespace GuiClientWS
         {
             if (cityTextBox.Text != "" && stationTextBox.Text !="")
             {
-                result = client.GetStationInfo(cityTextBox.Text, stationTextBox.Text);
-                CreateResultPanel();
+                client.GetStationInfoAsync(cityTextBox.Text, stationTextBox.Text);
             }
             else
             {
-                MessageBox.Show("Please input a city");
+                MessageBox.Show("Please input a city"); 
             }
         }
 
