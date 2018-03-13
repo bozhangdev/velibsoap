@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="GuiClientWS" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Connected Services" t="Include">
+          <e p="VelibSoapServiceReference" t="Include">
+            <e p="configuration.svcinfo" t="Include" />
+            <e p="configuration91.svcinfo" t="Include" />
+            <e p="item.disco" t="Include" />
+            <e p="item.xsd" t="Include" />
+            <e p="item1.xsd" t="Include" />
+            <e p="Reference.cs" t="Include" />
+            <e p="Reference.svcmap" t="Include" />
+            <e p="VelibService.wsdl" t="Include" />
+          </e>
+        </e>
+        <e p="GuiClientWS.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="Velib.cs" t="Include" />
+        <e p="Velib.Designer.cs" t="Include" />
+        <e p="Velib.resx" t="Include" />
+      </e>
+      <e p="GuiClientWS.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2017.3/resharper-host/local/Transient/ReSharperHost/v11/SolutionCaches/_GuiClientWS.-993061969.00" t="ExcludeRecursive" />
+  </component>
+</project>

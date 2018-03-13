@@ -8,3 +8,13 @@ c:\users\zzzhbooo\source\repos\GuiClientWS\GuiClientWS\obj\Debug\GuiClientWS.csp
 c:\users\zzzhbooo\source\repos\GuiClientWS\GuiClientWS\obj\Debug\GuiClientWS.exe
 c:\users\zzzhbooo\source\repos\GuiClientWS\GuiClientWS\obj\Debug\GuiClientWS.pdb
 C:\Users\zzzhbooo\source\repos\GuiClientWS\GuiClientWS\obj\Debug\GuiClientWS.Velib.resources
+C:\Users\zzzhbooo\Desktop\velibsoap\GuiClientWS\GuiClientWS\bin\Debug\GuiClientWS.exe.config
+C:\Users\zzzhbooo\Desktop\velibsoap\GuiClientWS\GuiClientWS\bin\Debug\GuiClientWS.exe
+C:\Users\zzzhbooo\Desktop\velibsoap\GuiClientWS\GuiClientWS\bin\Debug\GuiClientWS.pdb
+C:\Users\zzzhbooo\Desktop\velibsoap\GuiClientWS\GuiClientWS\obj\Debug\GuiClientWS.csprojResolveAssemblyReference.cache
+C:\Users\zzzhbooo\Desktop\velibsoap\GuiClientWS\GuiClientWS\obj\Debug\GuiClientWS.Velib.resources
+C:\Users\zzzhbooo\Desktop\velibsoap\GuiClientWS\GuiClientWS\obj\Debug\GuiClientWS.Properties.Resources.resources
+C:\Users\zzzhbooo\Desktop\velibsoap\GuiClientWS\GuiClientWS\obj\Debug\GuiClientWS.csproj.GenerateResource.Cache
+C:\Users\zzzhbooo\Desktop\velibsoap\GuiClientWS\GuiClientWS\obj\Debug\GuiClientWS.csproj.CoreCompileInputs.cache
+C:\Users\zzzhbooo\Desktop\velibsoap\GuiClientWS\GuiClientWS\obj\Debug\GuiClientWS.exe
+C:\Users\zzzhbooo\Desktop\velibsoap\GuiClientWS\GuiClientWS\obj\Debug\GuiClientWS.pdb

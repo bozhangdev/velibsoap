@@ -17,6 +17,7 @@ namespace GuiClientWS
         Panel panel = new Panel();
         RadioButton searchCity;
         RadioButton searchStation;
+        RadioButton getHelp;
         Button confirmButton;
         Button returnButton;
         TextBox cityTextBox;
@@ -62,6 +63,11 @@ namespace GuiClientWS
                 result = args.Result;
                 CreateResultPanel();
             };
+            client.GetHelpCompleted += delegate (object sender, GetHelpCompletedEventArgs args)
+            {
+                result = args.Result;
+                CreateResultPanel();
+            };
         }
 
         private void CreateWelcomePanel()
@@ -70,24 +76,31 @@ namespace GuiClientWS
             welcomePanel.Size = new Size(400, 300);
             welcomePanel.Location = new Point(0,40);
 
+            Size radioButtonSize = new Size(200, 40);
+
             Label welcomeLabel = new Label();
             welcomeLabel.Text = "Welcome to Velib\nWhat do yo want to do?";
-            welcomeLabel.Size = new Size(200, 40);
+            welcomeLabel.Size = radioButtonSize;
             welcomeLabel.Location = new Point((welcomePanel.Width - welcomeLabel.Width) / 2, (welcomePanel.Height - welcomeLabel.Height) / 2 - 90);
 
             searchCity = new RadioButton();
-            searchCity.Size = new Size(200, 40);
+            searchCity.Size = radioButtonSize;
             searchCity.Location = new Point((welcomePanel.Width - searchCity.Width) / 2, (welcomePanel.Height - searchCity.Height) / 2 - 50);
             searchCity.Text = "List all stations of a city";
 
             searchStation = new RadioButton();
-            searchStation.Size = new Size(200, 40);
+            searchStation.Size = radioButtonSize;
             searchStation.Location = new Point((welcomePanel.Width - searchStation.Width) / 2, (welcomePanel.Height - searchStation.Height) / 2);
             searchStation.Text = "Search for a station by name";
 
+            getHelp = new RadioButton();
+            getHelp.Size = radioButtonSize;
+            getHelp.Location = new Point((welcomePanel.Width - searchStation.Width) / 2, (welcomePanel.Height - searchStation.Height) / 2 + 50);
+            getHelp.Text = "Get Help";
+
             confirmButton = new Button();
             confirmButton.Size = new Size(200, 50);
-            confirmButton.Location = new Point((welcomePanel.Width - confirmButton.Width) / 2, (welcomePanel.Height - confirmButton.Height) / 2 + 50);
+            confirmButton.Location = new Point((welcomePanel.Width - confirmButton.Width) / 2, (welcomePanel.Height - confirmButton.Height) / 2 + 100);
             confirmButton.Text = "Confirm";
             confirmButton.Click += new EventHandler(ConfirmButtonClick);
 
@@ -95,6 +108,7 @@ namespace GuiClientWS
             welcomePanel.Controls.Add(searchStation);
             welcomePanel.Controls.Add(confirmButton);
             welcomePanel.Controls.Add(welcomeLabel);
+            welcomePanel.Controls.Add(getHelp);
 
             panel.Visible = false;
             panel = welcomePanel;
@@ -161,15 +175,15 @@ namespace GuiClientWS
         private void CreateResultPanel()
         {
             Panel resultPanel = new Panel();
-            resultPanel.Size = new Size(800, 400);
+            resultPanel.Size = new Size(300, 400);
             resultPanel.Location = new Point((this.Width - resultPanel.Width) / 2, (this.Height - resultPanel.Height) / 2);
             Label resultLabel = new Label();
             resultPanel.Controls.Add(resultLabel);
             resultLabel.AutoSize = true;
             resultPanel.AutoSize = false;
             resultPanel.AutoScroll = true;
-            resultLabel.MaximumSize = new Size(800, 0);
-            resultLabel.Location = resultLabel.PointToClient(new Point(270, 130));
+            resultLabel.MaximumSize = new Size(300, 0);
+            resultLabel.Location = new Point(0, 80);
             resultLabel.Text = result;
 
             panel.Visible = false;
@@ -188,6 +202,10 @@ namespace GuiClientWS
             if (searchStation.Checked == true)
             {
                 CreateSearchStationPanel();
+            }
+            if (getHelp.Checked == true)
+            {
+                client.GetHelpAsync();
             }
         }
 
