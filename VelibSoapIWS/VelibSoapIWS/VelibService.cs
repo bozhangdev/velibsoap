@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Runtime.Caching;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,6 +13,17 @@ namespace VelibSoapIWS
     class VelibService : IVelibService
     {
         private string key = "afb87edfbd60684611fff45fbb859a9e0bf023ff";
+        ObjectCache cacheCity;
+        ObjectCache cacheStation;
+        CacheItemPolicy policy;
+
+        public VelibService()
+        {
+            cacheCity = MemoryCache.Default;
+            cacheStation = MemoryCache.Default;
+            policy = new CacheItemPolicy();
+            policy.SlidingExpiration = new TimeSpan(0, 30, 0);
+        }
 
         public string GetHelp()
         {
@@ -23,6 +35,10 @@ namespace VelibSoapIWS
 
         public async Task<string> GetStationInfo(string city, string station)
         {
+            if (cacheStation[station] != null)
+            {
+                return (string)cacheStation[station];
+            }
             string requestUri = "https://api.jcdecaux.com/vls/v1/stations/?contract=" + city + "&apiKey=" + key;
             WebRequest request = WebRequest.Create(requestUri);
             request.ContentType = "text/html;charset=UTF-8";
@@ -48,6 +64,7 @@ namespace VelibSoapIWS
                 if (velib.name.Contains(station.ToUpper()))
                 {
                     a = velib;
+                    cacheStation.Set(station, a.ToString(), policy);
                     break;
                 }
             }
@@ -62,6 +79,10 @@ namespace VelibSoapIWS
 
         public async Task<string> GetStationsOfACity(string city)
         {
+            if (cacheCity[city] != null)
+            {
+                return (string)cacheCity[city];
+            }
             string requestUri = "https://api.jcdecaux.com/vls/v1/stations/?contract=" + city + "&apiKey=" + key;
             WebRequest request = WebRequest.Create(requestUri);
             request.ContentType = "text/html;charset=UTF-8";
@@ -87,6 +108,7 @@ namespace VelibSoapIWS
                 result += station.name;
                 result += "\n";
             }
+            cacheCity.Set(city, result, policy);
             return result;
         }
     }
