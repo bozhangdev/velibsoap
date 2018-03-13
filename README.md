@@ -1,5 +1,11 @@
 # REST and SOAP WS Lab
 
+## Components
+
+VelibSoapIWS is the IWS, VelibConsoleClient is the first and minimal client console application and GuiClientWS is the GUI client application.
+
+Please run the VelibSoapIWS in VS as Admin.
+
 ## Basic Functions
 
 1. There are two parts in this project, a local **Intermediary Web Service** that expose a WS-SOAP API to clients to access to the Velib Web Service and a **Client Application**.
