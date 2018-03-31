@@ -1,0 +1,14 @@
+c:\users\zzzhbooo\source\repos\VelibConsoleClient\VelibConsoleClient\bin\Debug\VelibConsoleClient.exe.config
+c:\users\zzzhbooo\source\repos\VelibConsoleClient\VelibConsoleClient\bin\Debug\VelibConsoleClient.exe
+c:\users\zzzhbooo\source\repos\VelibConsoleClient\VelibConsoleClient\bin\Debug\VelibConsoleClient.pdb
+c:\users\zzzhbooo\source\repos\VelibConsoleClient\VelibConsoleClient\obj\Debug\VelibConsoleClient.csprojResolveAssemblyReference.cache
+c:\users\zzzhbooo\source\repos\VelibConsoleClient\VelibConsoleClient\obj\Debug\VelibConsoleClient.csproj.CoreCompileInputs.cache
+c:\users\zzzhbooo\source\repos\VelibConsoleClient\VelibConsoleClient\obj\Debug\VelibConsoleClient.exe
+c:\users\zzzhbooo\source\repos\VelibConsoleClient\VelibConsoleClient\obj\Debug\VelibConsoleClient.pdb
+C:\Users\zzzhbooo\Desktop\TD2\VelibConsoleClient\VelibConsoleClient\bin\Debug\VelibConsoleClient.exe.config
+C:\Users\zzzhbooo\Desktop\TD2\VelibConsoleClient\VelibConsoleClient\bin\Debug\VelibConsoleClient.exe
+C:\Users\zzzhbooo\Desktop\TD2\VelibConsoleClient\VelibConsoleClient\bin\Debug\VelibConsoleClient.pdb
+C:\Users\zzzhbooo\Desktop\TD2\VelibConsoleClient\VelibConsoleClient\obj\Debug\VelibConsoleClient.csprojResolveAssemblyReference.cache
+C:\Users\zzzhbooo\Desktop\TD2\VelibConsoleClient\VelibConsoleClient\obj\Debug\VelibConsoleClient.csproj.CoreCompileInputs.cache
+C:\Users\zzzhbooo\Desktop\TD2\VelibConsoleClient\VelibConsoleClient\obj\Debug\VelibConsoleClient.exe
+C:\Users\zzzhbooo\Desktop\TD2\VelibConsoleClient\VelibConsoleClient\obj\Debug\VelibConsoleClient.pdb

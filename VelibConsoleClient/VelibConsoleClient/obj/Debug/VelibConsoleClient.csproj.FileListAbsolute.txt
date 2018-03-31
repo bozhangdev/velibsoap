@@ -1,7 +1,0 @@
-c:\users\zzzhbooo\source\repos\VelibConsoleClient\VelibConsoleClient\bin\Debug\VelibConsoleClient.exe.config
-c:\users\zzzhbooo\source\repos\VelibConsoleClient\VelibConsoleClient\bin\Debug\VelibConsoleClient.exe
-c:\users\zzzhbooo\source\repos\VelibConsoleClient\VelibConsoleClient\bin\Debug\VelibConsoleClient.pdb
-c:\users\zzzhbooo\source\repos\VelibConsoleClient\VelibConsoleClient\obj\Debug\VelibConsoleClient.csprojResolveAssemblyReference.cache
-c:\users\zzzhbooo\source\repos\VelibConsoleClient\VelibConsoleClient\obj\Debug\VelibConsoleClient.csproj.CoreCompileInputs.cache
-c:\users\zzzhbooo\source\repos\VelibConsoleClient\VelibConsoleClient\obj\Debug\VelibConsoleClient.exe
-c:\users\zzzhbooo\source\repos\VelibConsoleClient\VelibConsoleClient\obj\Debug\VelibConsoleClient.pdb
