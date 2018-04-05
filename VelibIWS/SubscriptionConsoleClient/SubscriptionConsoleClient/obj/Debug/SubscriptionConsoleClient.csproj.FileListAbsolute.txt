@@ -1,0 +1,7 @@
+c:\users\zzzhbooo\source\repos\SubscriptionConsoleClient\SubscriptionConsoleClient\bin\Debug\SubscriptionConsoleClient.exe.config
+c:\users\zzzhbooo\source\repos\SubscriptionConsoleClient\SubscriptionConsoleClient\bin\Debug\SubscriptionConsoleClient.exe
+c:\users\zzzhbooo\source\repos\SubscriptionConsoleClient\SubscriptionConsoleClient\bin\Debug\SubscriptionConsoleClient.pdb
+c:\users\zzzhbooo\source\repos\SubscriptionConsoleClient\SubscriptionConsoleClient\obj\Debug\SubscriptionConsoleClient.csprojResolveAssemblyReference.cache
+c:\users\zzzhbooo\source\repos\SubscriptionConsoleClient\SubscriptionConsoleClient\obj\Debug\SubscriptionConsoleClient.csproj.CoreCompileInputs.cache
+c:\users\zzzhbooo\source\repos\SubscriptionConsoleClient\SubscriptionConsoleClient\obj\Debug\SubscriptionConsoleClient.exe
+c:\users\zzzhbooo\source\repos\SubscriptionConsoleClient\SubscriptionConsoleClient\obj\Debug\SubscriptionConsoleClient.pdb

@@ -50,11 +50,14 @@
   <ItemGroup>
     <Compile Include="City.cs" />
     <Compile Include="IMonitor.cs" />
+    <Compile Include="ISubStationEvent.cs" />
+    <Compile Include="ISubStationService.cs" />
     <Compile Include="IVelibService.cs" />
     <Compile Include="Monitor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MonitorStatic.cs" />
     <Compile Include="Station.cs" />
+    <Compile Include="SubStationService.cs" />
     <Compile Include="VelibService.cs" />
   </ItemGroup>
   <ItemGroup>
