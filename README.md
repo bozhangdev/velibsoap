@@ -4,9 +4,9 @@
 
    VelibIWS includes all parts of this Lab. 
 
-   VelibSoapIWS is the IWS, VelibConsoleClient is the first and minimal client console application, GuiClientWS is the GUI client application, GUIMonitor is the GUI client application for monitoring.
+   VelibSoapIWS is the IWS, VelibConsoleClient is the first and minimal client console application, GuiClientWS is the GUI client application, GUIMonitor is the GUI client application for monitoring, SubscriptionConsoleClient is the console application for Lab2 to be the event based client.
 
-   Please run the VelibSoapIWS in VS as Admin. The function of monitoring uses the port 8734 and the function of IWS uses the port 8733, please make sure that they aren't occupied.
+   Please run the VelibSoapIWS in VS as Admin. The function of monitoring uses the port 8734, the function of IWS uses the port 8733 and the function of Lab2 uses port 8735, please make sure that they aren't occupied.
 
    ## Basic Functions
 
